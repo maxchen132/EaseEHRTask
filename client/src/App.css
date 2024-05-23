@@ -1,0 +1,117 @@
+.App     {
+  height: 100vh;
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nurseTable {
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+.cell {
+  border-style: solid;
+  padding: 12px;
+}
+
+.cellButton {
+  border-style: solid;
+  padding: 5px;
+}
+
+.delete {
+  color:red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.edit {
+  color: blue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.add {
+  color: blue;
+  border-radius: 5px;
+  padding: 5px;
+  align-self: left;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.exit {
+  display: flex;
+  width: 25px;
+  justify-content: flex-end;
+}
+
+.exit button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.modalContainer .body input {
+  margin: 10px;
+}
+
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
