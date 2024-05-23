@@ -3,6 +3,7 @@ import axios from 'axios';
 import Add from "./Add";
 import Delete from "./Delete";
 import Edit from "./Edit";
+import {CSVLink} from "react-csv";
 
 const Nurses = () => {
   const [nurses, setNurses] = useState([]);
@@ -65,6 +66,7 @@ const Nurses = () => {
         </tbody>
       </table>
       <button className='add' onClick={() => {setOpenAdd(true)}}> Add </button>
+      <button className='add'> <CSVLink data={nurses}> Download </CSVLink> </button>
       {openAdd && <Add setOpen={setOpenAdd}/>}
       {openDelete && <Delete id = {nurseId} setOpen = {setOpenDelete}/>}
       {openEdit && <Edit id = {nurseId} setOpen = {setOpenDelete}/>}
